@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="formulario/css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    
+
+</head>
+<body>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=51973247425&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Devmente%20." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+
+	<header>
+        <div class="container">
+            <p class="logo"> Devmente</p>
+        <div class="imagen">
+            <a href="index.html"><img src="media/logo1.png"> </a>
+            
+        </div>    
+            <nav>
+                <a class="return" href="index.html"></a>
+            </nav>
+        </div>
+    </header>
+<div class="base">	
+    <h1 class="formulario__titulo">Ingrese datos</h1>
+    <h3>Complete el siguiente formulario:</h3>
+        <form action="https://formsubmit.co/bbed5308ac61f0d735c2e757d7787646" method="POST" class="formulario">
+			<label for="" class="formulario__label">Nombres:</label>
+			<input type="text" name="nombres" class="formulario__input" placeholder="Ingrese Nombres" required>
+			<label for="" class="formulario__label">Apellidos:</label>
+			<input type="text" name="apellidos" class="formulario__input" placeholder="Ingrese Apellidos" required>
+			<label for="" class="formulario__label">N° de Teléfono:</label>
+			<input type="text" name="telefono" class="formulario__input" placeholder="Ingrese N° de Teléfono" required>
+			<label for="" class="formulario__label">Correo Electrónico:</label>
+			<input type="email" name="email" class="formulario__input" placeholder="Ingrese Correo Electrónico" required>
+			<label for="" class="formulario__cv">Inserte CV:</label>
+			<input type="file" name="file" class="formulario__input" required>
+            <input type="reset" class="formulario__reset" value="Limpiar">	
+			<input type="submit" class="formulario__submit" onclick="alert('Se envió correctamente el CV')">
+			<input type="button" class="formulario__cancelar" value="Cancelar">
+			<input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+			<input type="hidden" name="_captcha" value="false">
+    	</form>
+
+        <div class="modal-container">
+            <div class="modal">
+            
+            <div class="modal-textos">
+                <h2>¿Seguro que desea cancelar?</h2>
+            </div>
+         
+            <div class="inputs">
+                <input type="button" class="salir" value="Sí" onclick="redireccion()">
+                <input type="button" class="continuar" value="No">
+            </div>
+        
+    </div>
+        </div>
+
+</div>
+
+	<footer>
+        <div class="container">
+            <p>&copy; Devmente 2022</p>
+        </div>     
+    </footer>
+
+<script src="js.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
